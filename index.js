@@ -7,11 +7,11 @@ const port = 3001
 app.get('/', (req, res) => res.send('Light led'))
 
 const device = awsIot.device({
-  keyPath: 'certs/8f680e1fc3-private.pem.key',
-  certPath: 'certs/8f680e1fc3-certificate.pem.crt',
+  keyPath: 'certs/040198d3e3-private.pem.key',
+  certPath: 'certs/040198d3e3-certificate.pem.crt',
   caPath: 'certs/root-CA.crt',
   region: 'us-east-1',
-  clientId: 'server',
+  clientId: 'server-prod',
   host: 'a1io5eo0eh1c6a-ats.iot.us-east-1.amazonaws.com'
 });
 
